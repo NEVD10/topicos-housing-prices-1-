@@ -1,0 +1,4 @@
+# Crear la base de datos
+diabetes_prediction_spark
+
+Se carga con pyspark...
