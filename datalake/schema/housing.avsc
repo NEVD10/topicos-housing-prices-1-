@@ -3,19 +3,15 @@
   "name": "Housing",
   "namespace": "dataset.housing",
   "fields": [
-    { "name": "crim",    "type": "double" },
-    { "name": "zn",      "type": "double" },
-    { "name": "indus",   "type": "double" },
-    { "name": "chas",    "type": "double" },
-    { "name": "nox",     "type": "double" },
-    { "name": "rm",      "type": "double" },
-    { "name": "age",     "type": "double" },
-    { "name": "dis",     "type": "double" },
-    { "name": "rad",     "type": "double" },
-    { "name": "tax",     "type": "double" },
-    { "name": "ptratio", "type": "double" },
-    { "name": "b",       "type": "double" },
-    { "name": "lstat",   "type": "double" },
-    { "name": "medv",    "type": "double" }
+    { "name": "longitude", "type": "double" },
+    { "name": "latitude", "type": "double" },
+    { "name": "housing_median_age", "type": "double" },
+    { "name": "total_rooms", "type": "double" },
+    { "name": "total_bedrooms", "type": "double" },
+    { "name": "population", "type": "double" },
+    { "name": "households", "type": "double" },
+    { "name": "median_income", "type": "double" },
+    { "name": "median_house_value", "type": "double" },
+    { "name": "ocean_proximity", "type": "string" }
   ]
 }
