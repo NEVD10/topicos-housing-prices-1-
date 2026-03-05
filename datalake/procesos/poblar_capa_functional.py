@@ -11,7 +11,8 @@ import logging
 from datetime import datetime
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType
-from pyspark.sql.functions import col, avg, round, max, min, count
+# Se agregó 'when' a la lista de importaciones
+from pyspark.sql.functions import col, avg, round, max, min, count, when
 
 # =============================================================================
 # @section 1. Configuración de parámetros
@@ -46,7 +47,8 @@ def create_spark_session(app_name="ProcesoFunctional_Housing-DiegoFlores"):
 
 def crear_database(spark, env, username, base_path):
     db_name = f"{env}_functional".lower()
-    db_location = f"{base_path}/{username}/datalake/{db_name.upper()}"
+    # Mantenemos consistencia en las rutas de HDFS
+    db_location = f"{base_path}/{username}/datalake/{db_name}"
     spark.sql(f"DROP DATABASE IF EXISTS {db_name} CASCADE")
     spark.sql(f"CREATE DATABASE IF NOT EXISTS {db_name} LOCATION '{db_location}'")
     return db_name
