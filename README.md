@@ -1,6 +1,6 @@
 # 🏆PROYECTO FINAL DE TOPICOS BI - HOUSING PRICES
 
-Descripcion 123455
+Descripcion
 
 - 🏗️ Arquitectura Medallón Explicada
 ```table
@@ -16,7 +16,7 @@ Descripcion 123455
 ```
 - 📁 Estructura del Repositorio
 ```
-topicos-deteccion-diabetes/
+topicos-housing-price/
 │
 ├── 📁 datalake/                    # Datos fuente de ejemplo
 │    ├── 📁 data/                    # Datos fuente de ejemplo
